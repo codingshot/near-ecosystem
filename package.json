@@ -9,12 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "express": "^4.18.2",
     "next": " 12.0.9",
     "react": "18.2.0",
     "react-calendly": "^4.0.1",
     "react-dom": "18.2.0",
     "react-router-dom": "^6.3.0",
-    "react-web-share": "^1.1.6"
+    "react-web-share": "^1.1.6",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "eslint": "8.22.0",
