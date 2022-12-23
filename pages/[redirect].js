@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Layout from "../components/Layout";
 
 const RedirectLinks = {
-  "/link": "",
+  "/code": "https://github.com/codingshot/near-ecosystem",
 };
 
 const Redirect = () => {
