@@ -23,10 +23,11 @@ Make a PR to this repo adding to the nearprojects.json in order to make a proejc
 - Develop a front end with ReactJS and Next.JS
 - Create a design with more seamless search features
 - Add Data About Wallet Selector Integration
+- Write a NEAR.social "Projects" standard
 
 
 # 💡 Feature Ideas
-- Submit projects
+- Submit projects (permissionless and on chain)
 - Ability for people to sign in and edit with NEAR Wallet (Wallet Selector)
 - Ability for set wallets to own card widgets
 - Project feedback board for each proejct (feature requests, bugs, enhancemenet)
@@ -41,3 +42,15 @@ Make a PR to this repo adding to the nearprojects.json in order to make a proejc
 - Ability to map open source github contributions to associated projects
 - Filter based on, upvotes, dated added
 - Ability to see which projects are inactive, eventually automatically calculated based on onchain and social media activity
+- Ability to see which projects got a grant, or funding
+- Ability to pull DAOs directly from AstroDAO API
+- Integrate a widget directory to NEAR.social or affiliate projects to Widgets
+
+## Non Priority Feature Ideas
+- Ability to pull official NFT projects associated with DAO
+- Ability to put screenshots or waybacks of websites to track activity
+- Related projects
+- Reccomended projects based on on chain upvotes
+- SocialDB integration of team members associated with projects pulling their profile information
+- Ability to see leaderboard based on on chain activity
+- DAO that votes on approval process
