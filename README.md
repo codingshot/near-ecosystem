@@ -9,9 +9,9 @@ An open NEAR ecosystem aggregator connecting on chain data, reviews + feedback, 
 
 Explainer: Crunchbase, Dappradar, Canny.io, Reddit all on chain and permissionless
 ## 🥅 Goal
--Reflect the most honest and up to date information about the NEAR ecosystem
--Be a source of truth for real analytics & growth in the NEAR ecosystem and for feedback for founders, product owners, business development professionals, and new users 
--Be permissionless and indexable database with no single point of failure
+- Reflect the most honest and up to date information about the NEAR ecosystem
+- Be a source of truth for real analytics & growth in the NEAR ecosystem and for feedback for founders, product owners, business development professionals, and new users 
+- Be permissionless and indexable database with no single point of failure
 
 
 # How to Submit
@@ -20,4 +20,24 @@ Make a PR to this repo adding to the nearprojects.json in order to make a proejc
 
 # Roadmap
 - NEAR.social integration
-- Develop a front end
+- Develop a front end with ReactJS and Next.JS
+- Create a design with more seamless search features
+- Add Data About Wallet Selector Integration
+
+
+# 💡 Feature Ideas
+- Submit projects
+- Ability for people to sign in and edit with NEAR Wallet (Wallet Selector)
+- Ability for set wallets to own card widgets
+- Project feedback board for each proejct (feature requests, bugs, enhancemenet)
+- Ability to comment 
+- Ability to upvote or downvote projet
+- ABility to report a scam with justiciation
+- Ability to see what other NEAR based chains these projects have integrated into 
+- Ability to see when a project was added
+- Ability to see when a project was updated
+- Ability to see history of edits
+- ABility to link associated smart contracts to projects
+- Ability to map open source github contributions to associated projects
+- Filter based on, upvotes, dated added
+- Ability to see which projects are inactive, eventually automatically calculated based on onchain and social media activity
