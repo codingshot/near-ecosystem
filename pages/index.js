@@ -2,14 +2,17 @@
 import styles from "../styles/Deck.module.css";
 // import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
+import data from "../data/combineddata.json";
 export default function Home() {
+  const prettifiedData = JSON.stringify(data, null, 2);
+
   return (
     <div className={styles.container}>
       <Layout pageTitle="NEAR Projects" />
-      <iframe
-        className="clickup-embed clickup-dynamic-height"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSc-K4T8aB42ncEAa98XX6I5Rwt0AQ6xU4BFtQFY_WsVmP5QXw/viewform"
-      ></iframe>
+      <div>
+         <h1>Projects on NEAR</h1>
+        <pre>{prettifiedData}</pre>
+      </div>
     </div>
   );
 }
