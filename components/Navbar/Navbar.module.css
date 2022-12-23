@@ -1,0 +1,128 @@
+.container {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7rem;
+  gap: 2rem;
+}
+.container > img {
+  display: none;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.links > div {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.links > div span {
+  display: flex;
+  height: fit-content;
+}
+.arrow {
+  right: -5px;
+  bottom: 7px;
+  position: absolute;
+  width: 10px;
+  height: fit-content;
+  transition: all 300ms ease;
+}
+.links > div:hover .arrow {
+  transform: rotate(180deg);
+}
+.links > div span svg path {
+  transition: all 300ms ease;
+}
+.links > div span svg:hover path:first-child {
+  fill: #3a2b80;
+}
+.links > div span svg:hover g {
+  fill: #3a2b80;
+}
+.toolTip {
+  padding-top: 1rem;
+  position: absolute;
+  display: none;
+  top: 2rem;
+}
+.toolTip > div {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  padding: 10px;
+  background: #3f4246;
+  width: 7.5rem;
+  gap: 11px;
+}
+.links > div:hover .toolTip {
+  animation: drop 300ms forwards;
+  display: flex;
+}
+.toolTip a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.toolTip a svg path,
+.toolTip a p {
+  transition: all 300ms ease;
+}
+.toolTip a:hover svg path:first-child {
+  fill: #3a2b80;
+}
+.toolTip a:hover svg path:last-child {
+  fill: #ffffff;
+}
+@keyframes drop {
+  from {
+    transform: translateY(-1em);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 660px) {
+  .links {
+    gap: 1rem;
+  }
+  .container > svg {
+    height: 50px;
+    width: fit-content;
+  }
+  .toolTip {
+    left: -2rem;
+  }
+  .toolTip > div {
+    width: 6rem;
+    padding: 8px;
+    gap: 5px;
+  }
+  .toolTip a svg {
+    width: 24px;
+  }
+  .toolTip a p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .container > svg {
+    display: none;
+  }
+  .container > img {
+    display: block;
+  }
+  .links > div span svg {
+    width: 24px;
+  }
+  .links {
+    gap: 0.7rem;
+  }
+  .container {
+    gap: 1rem;
+    padding: 1rem 15px;
+  }
+}

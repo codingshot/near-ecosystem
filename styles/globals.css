@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.container {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+#calendar:hover path {
+  fill: #3a2b80;
+}
+.calendly-inline-widget {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+}
+input {
+  outline: none;
+  border: none;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px !important;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px !important;
+  }
+}
+@media (max-width: 660px) {
+  #nav-logo-text {
+    display: none;
+  }
+}
