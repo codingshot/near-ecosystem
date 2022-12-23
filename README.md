@@ -15,7 +15,7 @@ Explainer: Crunchbase, Dappradar, Canny.io, Reddit all on chain and permissionle
 
 
 # How to Submit
-Make a PR to this repo adding to the nearprojects.json in order to make a proejct request or update with the information.
+Make a PR to this repo adding to the nearprojects.json in the [`data`](./data) folder in order to make a proejct request or update with the information.
 
 
 # Roadmap
