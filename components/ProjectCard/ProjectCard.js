@@ -84,7 +84,7 @@ const ProjectCard = (props) => {
             return buildLink(<Linkedin width={width} color={color}/>, value);
           else if (key === "Facebook" && value)
             return buildLink(<Facebook width={width} color={color}/>, value);
-          else return <></>
+          else return null;
         })}
       </div>
     );
