@@ -18,3 +18,9 @@
 .pageHeader h1{
   margin-bottom: 0.5em;
 }
+
+@media screen and (max-width: 850px) {
+  .container{
+    width: 90%;
+  }
+}
