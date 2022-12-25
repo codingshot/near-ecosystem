@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import styles from "./ProjectCardsContainer.module.css";
 import data from "../../data/combineddata.json";
 import ProjectCard from "../ProjectCard/ProjectCard";
+import SearchBar from "../SearchBar/SearchBar";
 
 const ProjectCardsContainer  = () => {
-
+  const [searchTerm, setSearchTerm] = useState('');
   const [lastProject, setLastProject] = useState(100);
 
   useEffect(() => {
@@ -20,8 +21,16 @@ const ProjectCardsContainer  = () => {
 
   // render cards within range
   const renderProjectCards = () => {
+      // filter data based on searchTerm
+
+    const filteredData = data.filter(item => {
+      if (item.ProjectName) {  // check if item.ProjectName is not null or undefined
+        return item.ProjectName.toLowerCase().includes(searchTerm.toLowerCase());
+      }
+      return false;
+    });
     return (
-      [...data].slice(0, lastProject).map((projectData, index) => {
+      filteredData.slice(0, lastProject).map((projectData, index) => {
         if (projectData.ProjectName)
           return (
             <ProjectCard 
@@ -34,8 +43,12 @@ const ProjectCardsContainer  = () => {
   }
 
   return (
-    <div className={styles.projectCardsContainer}>
-      {renderProjectCards()}
+    <div className={styles}>
+      <SearchBar onSearch={setSearchTerm} /> 
+        <div className={styles.projectCardsContainer}>
+        
+          {renderProjectCards()}
+        </div>
     </div>
   );
 }
