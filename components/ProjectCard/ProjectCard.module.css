@@ -67,9 +67,13 @@
   display: flex;
 }
 
-.projectLinks {
-}
-
 .socialIconsContainer svg {
   margin-right: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    width: 100%;
+    max-width: 80%;
+  }
 }

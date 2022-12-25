@@ -63,6 +63,7 @@ const ProjectCard = (props) => {
           href={link}
           target="_blank"
           rel="noreferrer"
+          key={link}
         >
           {component}
         </a>
@@ -74,16 +75,16 @@ const ProjectCard = (props) => {
         {keys.map((key, index) => {
           const value = props.projectData[key];
           if (key === "Website Link" && value)
-            return buildLink(<Globe width={width} color={color} key={index}/>, value);
+            return buildLink(<Globe width={width} color={color}/>, value);
           else if (key === "Twitter" && value)
-            return buildLink(<Twitter width={width} color={color} key={index}/>, value);
+            return buildLink(<Twitter width={width} color={color}/>, value);
           else if (key === "Github" && value)
-            return buildLink(<GitHub width={width} color={color} key={index}/>, value); 
+            return buildLink(<GitHub width={width} color={color}/>, value); 
           else if (key === "Linkedin" && value)
-            return buildLink(<Linkedin width={width} color={color} key={index}/>, value);
+            return buildLink(<Linkedin width={width} color={color}/>, value);
           else if (key === "Facebook" && value)
-            return buildLink(<Facebook width={width} color={color} key={index}/>, value);
-          else return <></>
+            return buildLink(<Facebook width={width} color={color}/>, value);
+          else return null;
         })}
       </div>
     );
