@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'; 
 import styles from "./SearchBar.module.css";
-import data from "../../data/combineddata.json";
-import ProjectCard from "../ProjectCard/ProjectCard";
+import { Search } from 'react-feather';
 
 function SearchBar(props) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -21,8 +20,13 @@ function SearchBar(props) {
 
   return (
     <div class={styles.SearchBar}>
-      <input class={styles.SearchBox} type="text" value={searchTerm} onChange={handleChange} onKeyPress={handleKeyPress} />
-      <button onClick={handleSearch}>Search</button>
+      <button onClick={handleSearch}><Search size={20}/></button>
+      <input 
+        class={styles.SearchBox} 
+        type="text" 
+        value={searchTerm} onChange={handleChange} onKeyPress={handleKeyPress} 
+        placeholder={"Search project name..."}
+      />
     </div>
   );
 }

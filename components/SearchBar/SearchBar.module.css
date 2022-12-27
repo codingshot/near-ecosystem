@@ -4,11 +4,22 @@
   width: 100%;
   background: rgba(214, 214, 214, 0.2);
   border-radius: 10px;
-  justify-content: center;
-  padding-top: 3em;
   box-shadow: 0 0.05rem 0.05rem rgb(34 34 34 / 5%), 0 0.2rem 0.8rem rgb(34 34 34 / 8%);
+  margin-bottom: 1.5em;
+  overflow: hidden;
+  height: 40px;
 }
 .SearchBox {
   background-color: white;
-  margin: 1em;
+  height: 100%;
+  flex: 1;
+  padding-left: 10px;
+}
+
+.SearchBar button {
+  width: 10%;
+  border: none;
+  max-width: 40px;
+  background-color: black;
+  color: white;
 }
