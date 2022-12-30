@@ -1,6 +1,9 @@
 # near-ecosystem (NEAR PROJECTS)
 The open NEAR Ecosystem aggregator
 
+# the NEAR Projects API can be found here
+- [NEAR PROJECTS API DOCS](https://github.com/swarna-rk/NearAPI) - an open source API for NEAR projects information.
+
 
 # 🌈 Value Prop
 An open NEAR ecosystem aggregator connecting on chain data, reviews + feedback, that anyone can edit with transparent audit logs, posted on chain and in a SOCIAL DB for the world to index. 
