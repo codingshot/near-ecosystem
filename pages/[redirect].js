@@ -3,6 +3,10 @@ import Layout from "../components/Layout";
 
 const RedirectLinks = {
   "/code": "https://github.com/codingshot/near-ecosystem",
+  "/live": "https://lu.ma/rug",
+  "/zoom": "https://us02web.zoom.us/meeting/register/tZMoceuhpjMvGtIyU6xUrGh0SqwTHDi1RbZP",
+  "/curate": "https://t.me/+6GOeraoJBnA2YzIx",
+  "/list": "",
 };
 
 const Redirect = () => {
